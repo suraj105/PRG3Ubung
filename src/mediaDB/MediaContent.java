@@ -3,8 +3,9 @@ package mediaDB;
 
 import java.math.BigDecimal;
 import java.time.Duration;
+import java.io.Serializable;
 
-interface MediaContentInterface extends ContentInterface{
+interface MediaContentInterface extends ContentInterface,Serializable{
     long getBitrate();
     Duration getLength();
     BigDecimal getSize();

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="17.0.2" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="mediaDB.InteractiveVideo"/>
+  </void>
+  <void method="add">
+   <object class="mediaDB.Audio"/>
+  </void>
+  <void method="add">
+   <object class="mediaDB.AudioVideo"/>
+  </void>
+  <void method="add">
+   <object class="mediaDB.Audio"/>
+  </void>
+  <void method="add">
+   <object class="mediaDB.LicensedAudio"/>
+  </void>
+  <void method="add">
+   <object class="mediaDB.LicensedAudio"/>
+  </void>
+  <void method="add">
+   <object class="mediaDB.Audio"/>
+  </void>
+  <void method="add">
+   <object class="mediaDB.InteractiveVideo"/>
+  </void>
+  <void method="add">
+   <object class="mediaDB.Audio"/>
+  </void>
+  <void method="add">
+   <object class="mediaDB.AudioVideo"/>
+  </void>
+  <void method="add">
+   <object class="mediaDB.InteractiveVideo"/>
+  </void>
+ </object>
+</java>

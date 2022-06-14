@@ -31,6 +31,23 @@ public class Action extends MediaContent {
 
     }
 
+    public synchronized void removeAll(){
+
+        if(this.c.size()< 0 ){
+
+        }
+        else
+            try{
+                for(int i=0;i<=this.c.size()*20000;i++){
+                    this.c.remove(this.c.size()-1);
+                }
+            }
+            catch (Exception e) {
+                System.out.println("There are no more Media Files in the list ");
+            }
+
+    }
+
     //deletes the searched item from the list.
     public synchronized void delete(MediaContent item) {
         if(this.c.size()< 0 ){

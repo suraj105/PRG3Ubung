@@ -4,12 +4,12 @@ import mediaDB.MediaContent;
 import java.util.List;
 
 public class AppIO {
-
+    static FileSystem file;
     public static void main(String[] args) {
+        read(file);
+    }
 
-        FileSystem file = new FileSystem();
-
-
+    static void read(FileSystem file){
         List<MediaContent> list1 = file.readJOS("dump.txt");
         list1.forEach(e->{
             System.out.println(e);

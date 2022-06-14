@@ -12,9 +12,9 @@ public class FileSystem {
 
     public static  void writeJBP(String fileName, List items) {
 
-        try (XMLEncoder encoder = new XMLEncoder(new BufferedOutputStream(Files.newOutputStream(Paths.get("/home/apex/Downloads/prg3Ubung3/prg3/src/test/"+fileName))))) {
+        try (XMLEncoder enc = new XMLEncoder(new BufferedOutputStream(Files.newOutputStream(Paths.get("/home/apex/Downloads/prg3Ubung3/prg3/src/test/"+fileName))))) {
 
-            encoder.writeObject(items);
+            enc.writeObject(items);
 
         } catch (Exception e) {
             System.out.println(e);
@@ -24,9 +24,9 @@ public class FileSystem {
 
     public static  List readJBP(String fileName) {
 
-        try (XMLDecoder decoder = new XMLDecoder(new BufferedInputStream(new FileInputStream("/home/apex/Downloads/prg3Ubung3/prg3/src/test/"+fileName)))) {
+        try (XMLDecoder dec = new XMLDecoder(new BufferedInputStream(new FileInputStream("/home/apex/Downloads/prg3Ubung3/prg3/src/test/"+fileName)))) {
 
-            return (List) decoder.readObject();
+            return (List) dec.readObject();
 
         } catch (Exception e) {
             System.out.println(e);        }

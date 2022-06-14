@@ -11,7 +11,6 @@ import javafx.scene.control.ListView;
 import mediaDB.*;
 
 import java.net.URL;
-import java.util.Collection;
 import java.util.List;
 import java.util.Random;
 import java.util.ResourceBundle;

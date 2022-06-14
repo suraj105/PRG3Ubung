@@ -93,17 +93,17 @@ public class Controller implements Initializable {
 
     public void saveJOS(){
         List<MediaContent> item = m.getAllFromList();
-        file.writeJOS("dump.txt",item);
+        file.writeJOS("test.txt",item);
     }
 
     public void saveJBP(){
         List<MediaContent> item = m.getAllFromList();
-        file.writeJBP("dump.xml",item);
+        file.writeJBP("test.xml",item);
     }
 
     public void readJOS(){
         clearScreen();
-        List<MediaContent> item = file.readJOS("dump.txt");
+        List<MediaContent> item = file.readJOS("test.txt");
         item.forEach(e->{
             m.upload(e);
         });
@@ -112,7 +112,7 @@ public class Controller implements Initializable {
 
     public void readJBP(){
         clearScreen();
-        List<MediaContent> item = file.readJBP("dump.xml");
+        List<MediaContent> item = file.readJBP("test.xml");
         item.forEach(e->{
             m.upload(e);
         });
